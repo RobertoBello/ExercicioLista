@@ -1,0 +1,26 @@
+arquivo = open('Lista_IPs.txt')
+lista = arquivo.readlines()
+arquivo.close()
+
+validos = []
+invalidos = []
+
+for ip in lista:
+    while a != '.':
+        if a > 0 and a < 255:
+            validos.append(ip)
+        else:
+            invalidos.append(ip)
+
+
+arq1 = open('Relatorio.txt', 'w')
+ips_v = []
+ips_v.append(Validos)
+arq.writelines(ips_v)
+arq.close()
+
+arq2 = open('Relatorio.txt', 'w')
+ips_i = []
+ips_i.append(Invalidos)
+arq.writelines(ips_i)
+arq.close()
